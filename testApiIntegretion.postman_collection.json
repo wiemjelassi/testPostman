@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "6daf6a56-22d9-4d08-824b-5fde131ae239",
+		"name": "testApiIntegretion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40196457",
+		"_collection_link": "https://testing-1954.postman.co/workspace/testing~993f7ee9-be9c-4274-86d0-4a5c9a11bd43/collection/40136563-6daf6a56-22d9-4d08-824b-5fde131ae239?action=share&source=collection_link&creator=40196457"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://thedogapi.com",
+					"protocol": "https",
+					"host": [
+						"thedogapi",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thedogapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"images",
+						"search"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "med"
+						},
+						{
+							"key": "mime_types",
+							"value": "jpg"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "has_breeds",
+							"value": "true"
+						},
+						{
+							"key": "order",
+							"value": "RANDOM"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "--location 'https://api.thedogapi.com/v1/images/upload' \\\r\n--header 'Content-Type: multipart/form-data' \\\r\n--header 'x-api-key: YOUR-API-KEY' \\\r\n--form 'file=@\"/path/to/file\"' \\\r\n--form 'sub_id=\"\"' \\\r\n--form 'breed_ids=\"\"'",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.thedogapi.com/v1/images/upload",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thedogapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"images",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
